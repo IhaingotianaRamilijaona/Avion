@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+  http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+  version="2.4">
+  <display-name>Application WEB affichant HelloWorld</display-name>
+
+  <servlet>
+    <servlet-name>Servlet_Vol_dispo</servlet-name>
+    <servlet-class>Servlet_Vol_dispo</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Servlet_Vol_dispo</servlet-name>
+    <url-pattern>/vol_dispo</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>Servlet_insertAvion</servlet-name>
+    <servlet-class>Servlet_insertAvion</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Servlet_insertAvion</servlet-name>
+    <url-pattern>/insertAvion</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>Servlet_PlannifierVol</servlet-name>
+    <servlet-class>Servlet_PlannifierVol</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Servlet_PlannifierVol</servlet-name>
+    <url-pattern>/plannifier_vol</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>Servlet_redirect_planification</servlet-name>
+    <servlet-class>Servlet_redirect_planification</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Servlet_redirect_planification</servlet-name>
+    <url-pattern>/Form_plannifier_vol</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Servlet_Vol_Annuler</servlet-name>
+    <servlet-class>Servlet_Vol_Annuler</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Servlet_Vol_Annuler</servlet-name>
+    <url-pattern>/vol_annuler</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Servlet_Vol_NonValide</servlet-name>
+    <servlet-class>Servlet_Vol_NonValide</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Servlet_Vol_NonValide</servlet-name>
+    <url-pattern>/vol_non_valide</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
